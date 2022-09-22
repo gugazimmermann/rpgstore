@@ -1,0 +1,27 @@
+type Category @model @auth(rules: [{allow: owner, operations: [create, delete, update]}, {allow: private, operations: [read]}, {allow: public, operations: [read]}]) {
+  id: ID!
+  name: String!
+  parent: String!
+  products: [Product] @hasMany
+}
+
+type Product @model @auth(rules: [{allow: owner, operations: [create, delete, update]}, {allow: private, operations: [read]}, {allow: public, operations: [read]}]) {
+  id: ID!
+  name: String!
+  quantity: Int!
+  value: Float!
+  categoryID: String!
+  category: Category @belongsTo
+  Comments: [Comment] @hasMany
+}
+
+type Comment @model @auth(rules: [{allow: owner, operations: [create, delete, update]}, {allow: private, operations: [read]}, {allow: public, operations: [read]}]) {
+  id: ID!
+  productID: String!
+  name: String!
+  email: String!
+  rating: Int!
+  comment: String
+  product: Product @belongsTo
+}
+ 

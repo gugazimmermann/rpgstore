@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-rpgstore-dev-211634-authRole",
+      "UnauthRoleArn": "arn:aws:iam::494458123866:role/amplify-rpgstore-dev-211634-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::494458123866:role/amplify-rpgstore-dev-211634-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-rpgstore-dev-211634-deployment",
+      "UnauthRoleName": "amplify-rpgstore-dev-211634-unauthRole",
+      "StackName": "amplify-rpgstore-dev-211634",
+      "StackId": "arn:aws:cloudformation:us-east-1:494458123866:stack/amplify-rpgstore-dev-211634/d2b482d0-3a0b-11ed-b99a-0a609463d635",
+      "AmplifyAppId": "d1ytw90jlhnsyz"
+    },
+    "categories": {
+      "auth": {
+        "rpgstoree4994324": {}
+      }
+    }
+  }
+}
