@@ -60,7 +60,7 @@ const Home = ({ products, categories }: HomeProps): ReactElement => {
 
   return (
     <div className="container">
-      <Navbar categories={categories} />
+      <Navbar />
       <main className="flex flex-col items-center sm:items-start sm:flex-row p-2">
         <aside className="w-full sm:w-2/12 flex flex-row sm:flex-col justify-around sm:justify-start sm:gap-4 p-2">
           <ItemsPerPage perPage={perPage} setPerPage={setPerPage} />
